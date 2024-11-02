@@ -9,9 +9,9 @@ Understanding Airbnb pricing dynamics and review sentiment can help hosts optimi
 Data was sourced from [Kaggle's Seattle Airbnb dataset](https://www.kaggle.com/datasets/airbnb/seattle).
 
 ### Questions Answered
-1. What factors affect Airbnb pricing?
-2. Can we predict review sentiment from property descriptions?
-3. How does seasonality affect pricing?
+1. What features most significantly influence Airbnb prices in Seattle?
+2. How does seasonality affect Airbnb pricing and occupancy rates?
+3. What distinguishes positive from negative reviews?
 
 ### Results
 - Key insights on pricing, review sentiment, and seasonality trends.
