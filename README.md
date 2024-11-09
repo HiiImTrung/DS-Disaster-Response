@@ -1,7 +1,7 @@
 ## Disaster Response Pipeline Project
 
 ## Project Summary
-This project is a part of the Udacity Data Scientist Nanodegree program. Its objective is to construct a Natural Language Processing (NLP) model capable of categorizing messages dispatched during disaster situations. The model is trained on a dataset comprising authentic messages transmitted during past disaster occurrences. Subsequently, the model is deployed to classify incoming messages during similar events.
+This project is a part of the Udacity Data Scientist Nanodegree program. Its objective is to construct a Natural Language Processing (NLP) model capable of categorizing messages made during disaster situations. The model is trained on the set of data comprising authentic messages transmitted during past disaster occurrences. Subsequently, the model is deployed to classify upcoming messages during the unexpected events.
 
 ## File Structure
 data/: Contains data files and scripts for data processing.
