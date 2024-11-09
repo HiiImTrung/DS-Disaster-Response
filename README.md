@@ -1,28 +1,32 @@
-# DataWebsite
+## Disaster Response Pipeline Project
 
-## Project Title: Seattle Airbnb Data Analysis
+## Project Summary
+This project is a part of the Udacity Data Scientist Nanodegree program. Its objective is to construct a Natural Language Processing (NLP) model capable of categorizing messages dispatched during disaster situations. The model is trained on a dataset comprising authentic messages transmitted during past disaster occurrences. Subsequently, the model is deployed to classify incoming messages during similar events.
 
-### Motivation
-This repository contains an analysis of Airbnb listings in Seattle, exploring pricing trends, rating factors, and popular neighborhoods.
+## File Structure
+- data/: Contains data files and scripts for data processing.
+-    disaster_messages.csv: CSV file containing messages dispatched during disasters.
+-    disaster_categories.csv: CSV file containing message categories.
+-    process_data.py: Python script for cleaning data and storing in a database.
 
-### Data
-Data was sourced from [Kaggle's Seattle Airbnb dataset](https://www.kaggle.com/datasets/airbnb/seattle).
+- models/: Contains scripts and files for training and saving the classification model.
+-    train_classifier.py: Python script for training the classifier and saving the model.
+-    classifier.pkl: Saved classifier model.
 
-### Questions Answered
-1. What are the seasonal trends in pricing across Seattle?
-2. What factors impact a listing's average rating or occupancy?
-3. Are there certain neighborhoods or property types with the highest bookings?
+- app/: Contains files for the web application.
+-    run.py: Python script to run the web app.
+-    templates/: HTML templates for the web app.
 
-## Key Findings
-- Prices peak in summer, with notable demand in central Seattle neighborhoods.
-- Listings with mid-range prices receive higher ratings.
+## Running Python Scripts and Web App
+To run the ETL pipeline that cleans data and stores it in a database:
 
-### Libraries
-Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
+python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
+To run the ML pipeline that trains the classifier and saves the model:
 
-## Data Files
-- `listings.csv`: Information on each listing, including price, neighborhood, and review score.
-- `reviews.csv`: Reviews on each listing.
-- `calendar.csv`: Price availability for each listing across dates.
+python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
+To run the web app:
 
+cd app
+python run.py
 
+Open a web browser and go to http://127.0 to view the web app.
