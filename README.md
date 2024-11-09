@@ -31,3 +31,6 @@ app/: Contains files for the web application.
 
 
 Open a web browser and go to http://0.0.0.0:3000/ to view the web app.
+
+## Screenshot
+<img width="991" alt="image" src="https://github.com/user-attachments/assets/54ef69b4-88c6-4a58-a55b-854cd2e97af5">
